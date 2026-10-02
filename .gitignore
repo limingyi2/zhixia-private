@@ -1,0 +1,7 @@
+# 这个仓库只有人设与配置，不该有别的
+__pycache__/
+*.pyc
+
+# 主配置不进私有仓库：它含 brain_token，且两边本来就该不同
+# （云端有 provider/model，本地没有）。见 tools/persync.py SYNC_GLOBS
+brain/config/config.json
