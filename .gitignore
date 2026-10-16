@@ -5,3 +5,17 @@ __pycache__/
 # 主配置不进私有仓库：它含 brain_token，且两边本来就该不同
 # （云端有 provider/model，本地没有）。见 tools/persync.py SYNC_GLOBS
 brain/config/config.json
+
+# Private runtime material: never publish real conversations or credentials.
+brain/archive/*chat_history*
+wechat-bridge/wxbridge.local.json*
+wechat_bridge/wxbridge.local.json*
+brain/config/management_agent_tokens.json
+*.bundle
+ssh.txt
+.env
+!.env.example
+
+brain/config/personas/*.json
+!brain/config/personas/default.json
+_attic/personas_backup_20261003/linzhixia.json
